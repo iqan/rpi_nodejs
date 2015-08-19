@@ -1,0 +1,324 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   'node-python' ]
+2 info using npm@2.11.3
+3 info using node@v0.12.7
+4 verbose install initial load of C:\Users\iqan\Desktop\work\package.json
+5 verbose installManyTop reading scoped package data from C:\Users\iqan\Desktop\work\node_modules\express\package.json
+6 verbose readDependencies loading dependencies from C:\Users\iqan\Desktop\work\package.json
+7 silly cache add args [ 'node-python', null ]
+8 verbose cache add spec node-python
+9 silly cache add parsed spec { raw: 'node-python',
+9 silly cache add   scope: null,
+9 silly cache add   name: 'node-python',
+9 silly cache add   rawSpec: '',
+9 silly cache add   spec: '*',
+9 silly cache add   type: 'range' }
+10 silly addNamed node-python@*
+11 verbose addNamed "*" is a valid semver range for node-python
+12 silly addNameRange { name: 'node-python', range: '*', hasData: false }
+13 silly mapToRegistry name node-python
+14 silly mapToRegistry using default registry
+15 silly mapToRegistry registry https://registry.npmjs.org/
+16 silly mapToRegistry uri https://registry.npmjs.org/node-python
+17 verbose addNameRange registry:https://registry.npmjs.org/node-python not in flight; fetching
+18 verbose request uri https://registry.npmjs.org/node-python
+19 verbose request no auth needed
+20 info attempt registry request try #1 at 10:02:43 PM
+21 verbose request id 3640668261fcea8b
+22 http request GET https://registry.npmjs.org/node-python
+23 http 200 https://registry.npmjs.org/node-python
+24 silly get cb [ 200,
+24 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+24 silly get     etag: '"BMI1C4Q61LIU3UI8ENE1QQW8I"',
+24 silly get     'content-type': 'application/json',
+24 silly get     'cache-control': 'max-age=60',
+24 silly get     'content-length': '11552',
+24 silly get     'accept-ranges': 'bytes',
+24 silly get     date: 'Tue, 18 Aug 2015 16:32:42 GMT',
+24 silly get     via: '1.1 varnish',
+24 silly get     age: '0',
+24 silly get     connection: 'keep-alive',
+24 silly get     'x-served-by': 'cache-fra1237-FRA',
+24 silly get     'x-cache': 'MISS',
+24 silly get     'x-cache-hits': '0',
+24 silly get     'x-timer': 'S1439915562.156645,VS0,VE180',
+24 silly get     vary: 'Accept' } ]
+25 verbose get saving node-python to C:\Users\iqan\AppData\Roaming\npm-cache\registry.npmjs.org\node-python\.cache.json
+26 silly addNameRange number 2 { name: 'node-python', range: '*', hasData: true }
+27 silly addNameRange versions [ 'node-python', [ '0.0.2', '0.0.3', '0.0.4' ] ]
+28 silly addNamed node-python@0.0.4
+29 verbose addNamed "0.0.4" is a plain semver version for node-python
+30 silly mapToRegistry name node-python
+31 silly mapToRegistry using default registry
+32 silly mapToRegistry registry https://registry.npmjs.org/
+33 silly mapToRegistry uri https://registry.npmjs.org/node-python
+34 verbose addRemoteTarball https://registry.npmjs.org/node-python/-/node-python-0.0.4.tgz not in flight; adding
+35 verbose addRemoteTarball [ 'https://registry.npmjs.org/node-python/-/node-python-0.0.4.tgz',
+35 verbose addRemoteTarball   '5dc689cc6f8394e0de39b10627296e93ff28db08' ]
+36 info retry fetch attempt 1 at 10:02:47 PM
+37 info attempt registry request try #1 at 10:02:47 PM
+38 http fetch GET https://registry.npmjs.org/node-python/-/node-python-0.0.4.tgz
+39 http fetch 200 https://registry.npmjs.org/node-python/-/node-python-0.0.4.tgz
+40 silly fetchAndShaCheck shasum 5dc689cc6f8394e0de39b10627296e93ff28db08
+41 verbose addTmpTarball C:\Users\iqan\AppData\Local\Temp\npm-1840-3167e5ec\registry.npmjs.org\node-python\-\node-python-0.0.4.tgz not in flight; adding
+42 verbose addTmpTarball already have metadata; skipping unpack for node-python@0.0.4
+43 silly cache afterAdd node-python@0.0.4
+44 verbose afterAdd C:\Users\iqan\AppData\Roaming\npm-cache\node-python\0.0.4\package\package.json not in flight; writing
+45 verbose afterAdd C:\Users\iqan\AppData\Roaming\npm-cache\node-python\0.0.4\package\package.json written
+46 silly install resolved [ { name: 'node-python',
+46 silly install resolved     version: '0.0.4',
+46 silly install resolved     description: 'Call python stuff from nodejs',
+46 silly install resolved     main: 'index.js',
+46 silly install resolved     repository:
+46 silly install resolved      { type: 'git',
+46 silly install resolved        url: 'git://github.com/JeanSebTr/node-python.git' },
+46 silly install resolved     bugs: { url: 'https://github.com/JeanSebTr/node-python/issues' },
+46 silly install resolved     keywords: [ 'python', 'bridge' ],
+46 silly install resolved     author:
+46 silly install resolved      { name: 'Jean-Sébastien Tremblay',
+46 silly install resolved        email: 'jeansebtr@xpensia.com',
+46 silly install resolved        url: 'http://blog.jeansebtr.com' },
+46 silly install resolved     contributors: [ [Object] ],
+46 silly install resolved     scripts: { test: 'node test/linker.js', install: 'node-gyp rebuild' },
+46 silly install resolved     license: 'BSD',
+46 silly install resolved     gypfile: true,
+46 silly install resolved     readmeFilename: 'README.md',
+46 silly install resolved     dependencies: { bindings: '~1.1.1' },
+46 silly install resolved     readme: '# node-python binding \n\npython bridge for nodejs!\n\nHyper-beta, don\'t hesitate to try and report bugs!\n\n[![Build Status](https://travis-ci.org/JeanSebTr/node-python.png)](https://travis-ci.org/JeanSebTr/node-python)\n\n## Installation\n\n```npm install node-python```\n\n## Usage\n\n```javascript\n\n// python stuff\nvar python = require(\'node-python\');\nvar os = python.import(\'os\');\n\n// nodejs stuff\nvar path = require(\'path\');\n\nassert(os.path.basename(os.getcwd()) == path.basename(process.cwd()))\n\n```\n\nYou should now go have fun with that and make it brokes :)\n\n## Current status\n\nWhat should work:\n\n* Conversion between None and Undefined\n* Conversion between Python\'s and Node\'s Boolean\n* Conversion between Python\'s and Node\'s String\n* Calling python functions from node\n* Conversion from Python\'s Array to Node\'s Array\n\nWhat may be broken:\n\n* Losing precision from Python\'s 64 bits Integer to Node\'s Number\n* If you\'re using node v0.6.x (please upgrade) you\'ll have to manually compile with node-gyp\n\nWhat\'s to be done:\n\n* Conversion from Node\'s Array to Python\'s Array\n* Pass javascript object to python\n* Call javascript function from python\n\nWhat would be realy awesome:\n\n* Proper object introspection\n\n\n## History\n\n* **v0.0.4** : 2013-10-09\n  - use the bindings module to load the native extension\n* **v0.0.3** : 2013-07-06\n  - Refactor\n  - Better type conversion & error handling\n  - Compilation now properly working on both OSX and Linux. Windows compilation _may_ work too\n* **v0.0.2** : 2012-12-21\n  - Forked from [chrisdickinson/node-python](https://github.com/chrisdickinson/node-python)\n  - Compilation with node-gyp\n',
+46 silly install resolved     _id: 'node-python@0.0.4',
+46 silly install resolved     dist:
+46 silly install resolved      { shasum: '5dc689cc6f8394e0de39b10627296e93ff28db08',
+46 silly install resolved        tarball: 'http://registry.npmjs.org/node-python/-/node-python-0.0.4.tgz' },
+46 silly install resolved     _from: 'node-python@*',
+46 silly install resolved     _npmVersion: '1.3.5',
+46 silly install resolved     _npmUser: { name: 'JeanSebTr', email: 'jean-seb@total-itech.com' },
+46 silly install resolved     maintainers: [ [Object] ],
+46 silly install resolved     directories: {},
+46 silly install resolved     _shasum: '5dc689cc6f8394e0de39b10627296e93ff28db08',
+46 silly install resolved     _resolved: 'https://registry.npmjs.org/node-python/-/node-python-0.0.4.tgz' } ]
+47 info install node-python@0.0.4 into C:\Users\iqan\Desktop\work
+48 info installOne node-python@0.0.4
+49 verbose installOne of node-python to C:\Users\iqan\Desktop\work not in flight; installing
+50 verbose lock using C:\Users\iqan\AppData\Roaming\npm-cache\_locks\node-python-9b88eeb8084993cc.lock for C:\Users\iqan\Desktop\work\node_modules\node-python
+51 silly install write writing node-python 0.0.4 to C:\Users\iqan\Desktop\work\node_modules\node-python
+52 verbose unbuild node_modules\node-python
+53 silly gentlyRm C:\Users\iqan\Desktop\work\node_modules\node-python is being purged from base C:\Users\iqan\Desktop\work
+54 verbose gentlyRm don't care about contents; nuking C:\Users\iqan\Desktop\work\node_modules\node-python
+55 verbose tar unpack C:\Users\iqan\AppData\Roaming\npm-cache\node-python\0.0.4\package.tgz
+56 verbose tar unpacking to C:\Users\iqan\Desktop\work\node_modules\node-python
+57 silly gentlyRm C:\Users\iqan\Desktop\work\node_modules\node-python is being purged
+58 verbose gentlyRm don't care about contents; nuking C:\Users\iqan\Desktop\work\node_modules\node-python
+59 silly gunzTarPerm modes [ '777', '666' ]
+60 silly gunzTarPerm extractEntry package.json
+61 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+62 silly gunzTarPerm extractEntry .npmignore
+63 silly gunzTarPerm modified mode [ '.npmignore', 420, 438 ]
+64 silly gunzTarPerm extractEntry README.md
+65 silly gunzTarPerm modified mode [ 'README.md', 420, 438 ]
+66 silly gunzTarPerm extractEntry index.js
+67 silly gunzTarPerm modified mode [ 'index.js', 420, 438 ]
+68 silly gunzTarPerm extractEntry .travis.yml
+69 silly gunzTarPerm modified mode [ '.travis.yml', 420, 438 ]
+70 silly gunzTarPerm extractEntry LICENSE.bsd
+71 silly gunzTarPerm modified mode [ 'LICENSE.bsd', 420, 438 ]
+72 silly gunzTarPerm extractEntry binding.gyp
+73 silly gunzTarPerm modified mode [ 'binding.gyp', 420, 438 ]
+74 silly gunzTarPerm extractEntry src/binding.cc
+75 silly gunzTarPerm modified mode [ 'src/binding.cc', 420, 438 ]
+76 silly gunzTarPerm extractEntry src/js_object_wrapper.h
+77 silly gunzTarPerm modified mode [ 'src/js_object_wrapper.h', 420, 438 ]
+78 silly gunzTarPerm extractEntry src/py_object_wrapper.cc
+79 silly gunzTarPerm modified mode [ 'src/py_object_wrapper.cc', 420, 438 ]
+80 silly gunzTarPerm extractEntry src/py_object_wrapper.h
+81 silly gunzTarPerm modified mode [ 'src/py_object_wrapper.h', 420, 438 ]
+82 silly gunzTarPerm extractEntry src/utils.cc
+83 silly gunzTarPerm modified mode [ 'src/utils.cc', 420, 438 ]
+84 silly gunzTarPerm extractEntry src/utils.h
+85 silly gunzTarPerm modified mode [ 'src/utils.h', 420, 438 ]
+86 silly gunzTarPerm extractEntry test/linker.js
+87 silly gunzTarPerm modified mode [ 'test/linker.js', 420, 438 ]
+88 verbose write writing to C:\Users\iqan\Desktop\work\node_modules\node-python\package.json
+89 info preinstall node-python@0.0.4
+90 verbose readDependencies loading dependencies from C:\Users\iqan\Desktop\work\node_modules\node-python\package.json
+91 silly prepareForInstallMany adding bindings@~1.1.1 from node-python dependencies
+92 verbose readDependencies loading dependencies from C:\Users\iqan\Desktop\work\node_modules\node-python\package.json
+93 silly cache add args [ 'bindings@~1.1.1', null ]
+94 verbose cache add spec bindings@~1.1.1
+95 silly cache add parsed spec { raw: 'bindings@~1.1.1',
+95 silly cache add   scope: null,
+95 silly cache add   name: 'bindings',
+95 silly cache add   rawSpec: '~1.1.1',
+95 silly cache add   spec: '>=1.1.1 <1.2.0',
+95 silly cache add   type: 'range' }
+96 silly addNamed bindings@>=1.1.1 <1.2.0
+97 verbose addNamed ">=1.1.1 <1.2.0" is a valid semver range for bindings
+98 silly addNameRange { name: 'bindings', range: '>=1.1.1 <1.2.0', hasData: false }
+99 silly mapToRegistry name bindings
+100 silly mapToRegistry using default registry
+101 silly mapToRegistry registry https://registry.npmjs.org/
+102 silly mapToRegistry uri https://registry.npmjs.org/bindings
+103 verbose addNameRange registry:https://registry.npmjs.org/bindings not in flight; fetching
+104 verbose request uri https://registry.npmjs.org/bindings
+105 verbose request no auth needed
+106 info attempt registry request try #1 at 10:02:48 PM
+107 verbose etag "BCS5XYG9ISNJFNKEL5FLOI5HX"
+108 http request GET https://registry.npmjs.org/bindings
+109 http 304 https://registry.npmjs.org/bindings
+110 silly get cb [ 304,
+110 silly get   { date: 'Tue, 18 Aug 2015 16:32:45 GMT',
+110 silly get     via: '1.1 varnish',
+110 silly get     'cache-control': 'max-age=60',
+110 silly get     etag: '"BCS5XYG9ISNJFNKEL5FLOI5HX"',
+110 silly get     age: '30',
+110 silly get     connection: 'keep-alive',
+110 silly get     'x-served-by': 'cache-fra1233-FRA',
+110 silly get     'x-cache': 'HIT',
+110 silly get     'x-cache-hits': '1',
+110 silly get     'x-timer': 'S1439915565.400380,VS0,VE0',
+110 silly get     vary: 'Accept' } ]
+111 verbose etag https://registry.npmjs.org/bindings from cache
+112 verbose get saving bindings to C:\Users\iqan\AppData\Roaming\npm-cache\registry.npmjs.org\bindings\.cache.json
+113 silly addNameRange number 2 { name: 'bindings', range: '>=1.1.1 <1.2.0', hasData: true }
+114 silly addNameRange versions [ 'bindings',
+114 silly addNameRange   [ '0.0.1',
+114 silly addNameRange     '0.1.0',
+114 silly addNameRange     '0.1.1',
+114 silly addNameRange     '0.2.0',
+114 silly addNameRange     '0.2.1',
+114 silly addNameRange     '0.2.2',
+114 silly addNameRange     '0.2.3',
+114 silly addNameRange     '0.2.4',
+114 silly addNameRange     '0.3.0',
+114 silly addNameRange     '0.4.0',
+114 silly addNameRange     '1.0.0',
+114 silly addNameRange     '1.1.0',
+114 silly addNameRange     '1.1.1',
+114 silly addNameRange     '1.2.0',
+114 silly addNameRange     '1.2.1' ] ]
+115 silly addNamed bindings@1.1.1
+116 verbose addNamed "1.1.1" is a plain semver version for bindings
+117 silly mapToRegistry name bindings
+118 silly mapToRegistry using default registry
+119 silly mapToRegistry registry https://registry.npmjs.org/
+120 silly mapToRegistry uri https://registry.npmjs.org/bindings
+121 verbose addRemoteTarball https://registry.npmjs.org/bindings/-/bindings-1.1.1.tgz not in flight; adding
+122 verbose addRemoteTarball [ 'https://registry.npmjs.org/bindings/-/bindings-1.1.1.tgz',
+122 verbose addRemoteTarball   '951f7ae010302ffc50b265b124032017ed2bf6f3' ]
+123 info retry fetch attempt 1 at 10:02:49 PM
+124 info attempt registry request try #1 at 10:02:49 PM
+125 http fetch GET https://registry.npmjs.org/bindings/-/bindings-1.1.1.tgz
+126 http fetch 200 https://registry.npmjs.org/bindings/-/bindings-1.1.1.tgz
+127 silly fetchAndShaCheck shasum 951f7ae010302ffc50b265b124032017ed2bf6f3
+128 verbose addTmpTarball C:\Users\iqan\AppData\Local\Temp\npm-1840-3167e5ec\registry.npmjs.org\bindings\-\bindings-1.1.1.tgz not in flight; adding
+129 verbose addTmpTarball already have metadata; skipping unpack for bindings@1.1.1
+130 silly cache afterAdd bindings@1.1.1
+131 verbose afterAdd C:\Users\iqan\AppData\Roaming\npm-cache\bindings\1.1.1\package\package.json not in flight; writing
+132 verbose afterAdd C:\Users\iqan\AppData\Roaming\npm-cache\bindings\1.1.1\package\package.json written
+133 silly install resolved [ { name: 'bindings',
+133 silly install resolved     description: 'Helper module for loading your native module\'s .node file',
+133 silly install resolved     keywords: [ 'native', 'addon', 'bindings', 'gyp', 'waf', 'c', 'c++' ],
+133 silly install resolved     version: '1.1.1',
+133 silly install resolved     author:
+133 silly install resolved      { name: 'Nathan Rajlich',
+133 silly install resolved        email: 'nathan@tootallnate.net',
+133 silly install resolved        url: 'http://tootallnate.net' },
+133 silly install resolved     repository:
+133 silly install resolved      { type: 'git',
+133 silly install resolved        url: 'git://github.com/TooTallNate/node-bindings.git' },
+133 silly install resolved     main: './bindings.js',
+133 silly install resolved     bugs: { url: 'https://github.com/TooTallNate/node-bindings/issues' },
+133 silly install resolved     _id: 'bindings@1.1.1',
+133 silly install resolved     dist:
+133 silly install resolved      { shasum: '951f7ae010302ffc50b265b124032017ed2bf6f3',
+133 silly install resolved        tarball: 'http://registry.npmjs.org/bindings/-/bindings-1.1.1.tgz' },
+133 silly install resolved     _from: 'bindings@>=1.1.1 <1.2.0',
+133 silly install resolved     _npmVersion: '1.3.2',
+133 silly install resolved     _npmUser: { name: 'tootallnate', email: 'nathan@tootallnate.net' },
+133 silly install resolved     maintainers: [ [Object], [Object] ],
+133 silly install resolved     directories: {},
+133 silly install resolved     _shasum: '951f7ae010302ffc50b265b124032017ed2bf6f3',
+133 silly install resolved     _resolved: 'https://registry.npmjs.org/bindings/-/bindings-1.1.1.tgz' } ]
+134 info install bindings@1.1.1 into C:\Users\iqan\Desktop\work\node_modules\node-python
+135 info installOne bindings@1.1.1
+136 verbose installOne of bindings to C:\Users\iqan\Desktop\work\node_modules\node-python not in flight; installing
+137 verbose lock using C:\Users\iqan\AppData\Roaming\npm-cache\_locks\bindings-a5bb76afb2af28be.lock for C:\Users\iqan\Desktop\work\node_modules\node-python\node_modules\bindings
+138 silly install write writing bindings 1.1.1 to C:\Users\iqan\Desktop\work\node_modules\node-python\node_modules\bindings
+139 verbose unbuild node_modules\node-python\node_modules\bindings
+140 silly gentlyRm C:\Users\iqan\Desktop\work\node_modules\node-python\node_modules\bindings is being purged from base C:\Users\iqan\Desktop\work
+141 verbose gentlyRm don't care about contents; nuking C:\Users\iqan\Desktop\work\node_modules\node-python\node_modules\bindings
+142 verbose tar unpack C:\Users\iqan\AppData\Roaming\npm-cache\bindings\1.1.1\package.tgz
+143 verbose tar unpacking to C:\Users\iqan\Desktop\work\node_modules\node-python\node_modules\bindings
+144 silly gentlyRm C:\Users\iqan\Desktop\work\node_modules\node-python\node_modules\bindings is being purged
+145 verbose gentlyRm don't care about contents; nuking C:\Users\iqan\Desktop\work\node_modules\node-python\node_modules\bindings
+146 silly gunzTarPerm modes [ '777', '666' ]
+147 silly gunzTarPerm extractEntry package.json
+148 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+149 silly gunzTarPerm extractEntry README.md
+150 silly gunzTarPerm modified mode [ 'README.md', 420, 438 ]
+151 silly gunzTarPerm extractEntry bindings.js
+152 silly gunzTarPerm modified mode [ 'bindings.js', 420, 438 ]
+153 verbose write writing to C:\Users\iqan\Desktop\work\node_modules\node-python\node_modules\bindings\package.json
+154 info preinstall bindings@1.1.1
+155 verbose readDependencies loading dependencies from C:\Users\iqan\Desktop\work\node_modules\node-python\node_modules\bindings\package.json
+156 verbose readDependencies loading dependencies from C:\Users\iqan\Desktop\work\node_modules\node-python\node_modules\bindings\package.json
+157 silly install resolved []
+158 verbose about to build C:\Users\iqan\Desktop\work\node_modules\node-python\node_modules\bindings
+159 info build C:\Users\iqan\Desktop\work\node_modules\node-python\node_modules\bindings
+160 info linkStuff bindings@1.1.1
+161 silly linkStuff bindings@1.1.1 has C:\Users\iqan\Desktop\work\node_modules\node-python\node_modules as its parent node_modules
+162 verbose linkBins bindings@1.1.1
+163 verbose linkMans bindings@1.1.1
+164 verbose rebuildBundles bindings@1.1.1
+165 info install bindings@1.1.1
+166 info postinstall bindings@1.1.1
+167 verbose unlock done using C:\Users\iqan\AppData\Roaming\npm-cache\_locks\bindings-a5bb76afb2af28be.lock for C:\Users\iqan\Desktop\work\node_modules\node-python\node_modules\bindings
+168 verbose about to build C:\Users\iqan\Desktop\work\node_modules\node-python
+169 info build C:\Users\iqan\Desktop\work\node_modules\node-python
+170 info linkStuff node-python@0.0.4
+171 silly linkStuff node-python@0.0.4 has C:\Users\iqan\Desktop\work\node_modules as its parent node_modules
+172 verbose linkBins node-python@0.0.4
+173 verbose linkMans node-python@0.0.4
+174 verbose rebuildBundles node-python@0.0.4
+175 verbose rebuildBundles [ 'bindings' ]
+176 info install node-python@0.0.4
+177 verbose unsafe-perm in lifecycle true
+178 info node-python@0.0.4 Failed to exec install script
+179 verbose unlock done using C:\Users\iqan\AppData\Roaming\npm-cache\_locks\node-python-9b88eeb8084993cc.lock for C:\Users\iqan\Desktop\work\node_modules\node-python
+180 verbose stack Error: node-python@0.0.4 install: `node-gyp rebuild`
+180 verbose stack Exit status 1
+180 verbose stack     at EventEmitter.<anonymous> (C:\Program Files\nodejs\node_modules\npm\lib\utils\lifecycle.js:213:16)
+180 verbose stack     at EventEmitter.emit (events.js:110:17)
+180 verbose stack     at ChildProcess.<anonymous> (C:\Program Files\nodejs\node_modules\npm\lib\utils\spawn.js:24:14)
+180 verbose stack     at ChildProcess.emit (events.js:110:17)
+180 verbose stack     at maybeClose (child_process.js:1015:16)
+180 verbose stack     at Process.ChildProcess._handle.onexit (child_process.js:1087:5)
+181 verbose pkgid node-python@0.0.4
+182 verbose cwd C:\Users\iqan\Desktop\work
+183 error Windows_NT 6.3.9600
+184 error argv "C:\\Program Files\\nodejs\\\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "node-python"
+185 error node v0.12.7
+186 error npm  v2.11.3
+187 error code ELIFECYCLE
+188 error node-python@0.0.4 install: `node-gyp rebuild`
+188 error Exit status 1
+189 error Failed at the node-python@0.0.4 install script 'node-gyp rebuild'.
+189 error This is most likely a problem with the node-python package,
+189 error not with npm itself.
+189 error Tell the author that this fails on your system:
+189 error     node-gyp rebuild
+189 error You can get their info via:
+189 error     npm owner ls node-python
+189 error There is likely additional logging output above.
+190 verbose exit [ 1, true ]
+191 verbose unbuild node_modules\node-python
+192 info preuninstall node-python@0.0.4
+193 info uninstall node-python@0.0.4
+194 verbose unbuild rmStuff node-python@0.0.4 from C:\Users\iqan\Desktop\work\node_modules
+195 info postuninstall node-python@0.0.4
+196 silly gentlyRm C:\Users\iqan\Desktop\work\node_modules\node-python is being purged from base C:\Users\iqan\Desktop\work
+197 verbose gentlyRm don't care about contents; nuking C:\Users\iqan\Desktop\work\node_modules\node-python
+198 silly vacuum-fs purging C:\Users\iqan\Desktop\work\node_modules\node-python
+199 silly vacuum-fs quitting because other entries in C:\Users\iqan\Desktop\work\node_modules
